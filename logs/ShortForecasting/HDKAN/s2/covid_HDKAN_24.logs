@@ -1,0 +1,48 @@
+Args in experiment:
+Namespace(random_seed=2025, enable_visual=False, save_model=False, percent=100, patch_len=9, degree1=4, degree2=7, is_training=1, model_id='covid_36_24', model='HDKAN', data='custom2', root_path='D:\\work\\datasets\\all_datasets\\short-term', data_path='covid.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=36, label_len=0, pred_len=24, use_revin=1, enc_in=55, dec_in=7, c_out=7, d_model=512, dropout=0.0, alpha=0.5, embed='timeF', num_workers=0, itr=1, train_epochs=20, batch_size=1, patience=5, learning_rate=0.0016, des='test', loss='mse', lradj='type1', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : covid_36_24_HDKAN_custom2_ftM_bz1_sl36_pl24_lr0.0016_dm512_d14_d27_patl9_dr0.0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 142
+val 44
+test 44
+	iters: 100, epoch: 1 | loss: 1.7710526
+	speed: 0.0160s/iter; left time: 43.9340s
+Epoch: 1 cost time: 1.1965644359588623
+Epoch: 1, Steps: 142 | Train Loss: 1.6100110 Vali Loss: 1.3071860 Test Loss: 6.3351817
+Validation loss decreased (inf --> 1.307186).  Saving model ...
+Updating learning rate to 0.0016
+	iters: 100, epoch: 2 | loss: 2.3060756
+	speed: 0.0132s/iter; left time: 34.3367s
+Epoch: 2 cost time: 1.0704288482666016
+Epoch: 2, Steps: 142 | Train Loss: 2.2133606 Vali Loss: 1.6948317 Test Loss: 7.9862204
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0008
+	iters: 100, epoch: 3 | loss: 1.0904129
+	speed: 0.0127s/iter; left time: 31.1828s
+Epoch: 3 cost time: 1.0359196662902832
+Epoch: 3, Steps: 142 | Train Loss: 1.5072719 Vali Loss: 1.3107288 Test Loss: 5.7831941
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.0004
+	iters: 100, epoch: 4 | loss: 1.0892850
+	speed: 0.0122s/iter; left time: 28.1850s
+Epoch: 4 cost time: 0.9398646354675293
+Epoch: 4, Steps: 142 | Train Loss: 1.3198138 Vali Loss: 1.3138242 Test Loss: 5.3358569
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.0002
+	iters: 100, epoch: 5 | loss: 0.7625487
+	speed: 0.0109s/iter; left time: 23.6286s
+Epoch: 5 cost time: 0.9279046058654785
+Epoch: 5, Steps: 142 | Train Loss: 1.2243478 Vali Loss: 1.3140255 Test Loss: 5.7779531
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 0.0001
+	iters: 100, epoch: 6 | loss: 2.5771253
+	speed: 0.0111s/iter; left time: 22.5299s
+Epoch: 6 cost time: 0.9040102958679199
+Epoch: 6, Steps: 142 | Train Loss: 1.1803106 Vali Loss: 1.3141430 Test Loss: 5.8610268
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : covid_36_24_HDKAN_custom2_ftM_bz1_sl36_pl24_lr0.0016_dm512_d14_d27_patl9_dr0.0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 44
+test shape: (44, 24, 55) (44, 24, 55)
+test shape: (44, 24, 55) (44, 24, 55)
+mse:6.335181713104248, mae:1.4928730726242065

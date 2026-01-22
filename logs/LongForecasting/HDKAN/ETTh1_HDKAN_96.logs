@@ -1,0 +1,72 @@
+Args in experiment:
+Namespace(random_seed=2025, enable_visual=False, save_model=False, percent=100, patch_len=12, degree1=7, degree2=2, is_training=1, model_id='ETTh1_96_96', model='HDKAN', data='ETTh1', root_path='D:\\work\\datasets\\all_datasets\\ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=0, pred_len=96, use_revin=1, enc_in=7, dec_in=7, c_out=7, d_model=256, dropout=0.2, alpha=0.35, embed='timeF', num_workers=0, itr=1, train_epochs=10, batch_size=64, patience=3, learning_rate=0.0008, des='test', loss='mse', lradj='type1', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_96_96_HDKAN_ETTh1_ftM_bz64_sl96_pl96_lr0.0008_dm256_d17_d22_patl12_dr0.2>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8449
+val 2785
+test 2785
+	iters: 100, epoch: 1 | loss: 1.5145030
+	speed: 0.0155s/iter; left time: 18.8966s
+Epoch: 1 cost time: 1.1084375381469727
+Epoch: 1, Steps: 132 | Train Loss: 1.6269601 Vali Loss: 1.9810141 Test Loss: 0.5287622
+Validation loss decreased (inf --> 1.981014).  Saving model ...
+Updating learning rate to 0.0008
+	iters: 100, epoch: 2 | loss: 1.4056916
+	speed: 0.0116s/iter; left time: 12.6838s
+Epoch: 2 cost time: 0.9228131771087646
+Epoch: 2, Steps: 132 | Train Loss: 1.4575358 Vali Loss: 1.7732802 Test Loss: 0.3816488
+Validation loss decreased (1.981014 --> 1.773280).  Saving model ...
+Updating learning rate to 0.0004
+	iters: 100, epoch: 3 | loss: 1.3875746
+	speed: 0.0119s/iter; left time: 11.3911s
+Epoch: 3 cost time: 0.9363009929656982
+Epoch: 3, Steps: 132 | Train Loss: 1.4007258 Vali Loss: 1.7517116 Test Loss: 0.3745969
+Validation loss decreased (1.773280 --> 1.751712).  Saving model ...
+Updating learning rate to 0.0002
+	iters: 100, epoch: 4 | loss: 1.3642734
+	speed: 0.0117s/iter; left time: 9.6292s
+Epoch: 4 cost time: 0.9226815700531006
+Epoch: 4, Steps: 132 | Train Loss: 1.3839584 Vali Loss: 1.7511873 Test Loss: 0.3693527
+Validation loss decreased (1.751712 --> 1.751187).  Saving model ...
+Updating learning rate to 0.0001
+	iters: 100, epoch: 5 | loss: 1.4125346
+	speed: 0.0117s/iter; left time: 8.0753s
+Epoch: 5 cost time: 0.9161536693572998
+Epoch: 5, Steps: 132 | Train Loss: 1.3749388 Vali Loss: 1.7503450 Test Loss: 0.3694820
+Validation loss decreased (1.751187 --> 1.750345).  Saving model ...
+Updating learning rate to 5e-05
+	iters: 100, epoch: 6 | loss: 1.3167012
+	speed: 0.0119s/iter; left time: 6.6514s
+Epoch: 6 cost time: 0.9346380233764648
+Epoch: 6, Steps: 132 | Train Loss: 1.3705679 Vali Loss: 1.7498601 Test Loss: 0.3684630
+Validation loss decreased (1.750345 --> 1.749860).  Saving model ...
+Updating learning rate to 2.5e-05
+	iters: 100, epoch: 7 | loss: 1.3714101
+	speed: 0.0119s/iter; left time: 5.1162s
+Epoch: 7 cost time: 0.9430623054504395
+Epoch: 7, Steps: 132 | Train Loss: 1.3677037 Vali Loss: 1.7494827 Test Loss: 0.3680575
+Validation loss decreased (1.749860 --> 1.749483).  Saving model ...
+Updating learning rate to 1.25e-05
+	iters: 100, epoch: 8 | loss: 1.3707664
+	speed: 0.0118s/iter; left time: 3.5149s
+Epoch: 8 cost time: 0.9285030364990234
+Epoch: 8, Steps: 132 | Train Loss: 1.3665826 Vali Loss: 1.7482329 Test Loss: 0.3682716
+Validation loss decreased (1.749483 --> 1.748233).  Saving model ...
+Updating learning rate to 6.25e-06
+	iters: 100, epoch: 9 | loss: 1.3563040
+	speed: 0.0119s/iter; left time: 1.9623s
+Epoch: 9 cost time: 0.9376809597015381
+Epoch: 9, Steps: 132 | Train Loss: 1.3657554 Vali Loss: 1.7477572 Test Loss: 0.3681636
+Validation loss decreased (1.748233 --> 1.747757).  Saving model ...
+Updating learning rate to 3.125e-06
+	iters: 100, epoch: 10 | loss: 1.3653450
+	speed: 0.0117s/iter; left time: 0.3861s
+Epoch: 10 cost time: 0.9201443195343018
+Epoch: 10, Steps: 132 | Train Loss: 1.3657040 Vali Loss: 1.7499546 Test Loss: 0.3680966
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.5625e-06
+>>>>>>>testing : ETTh1_96_96_HDKAN_ETTh1_ftM_bz64_sl96_pl96_lr0.0008_dm256_d17_d22_patl12_dr0.2<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2785
+test shape: (2785, 96, 7) (2785, 96, 7)
+test shape: (2785, 96, 7) (2785, 96, 7)
+mse:0.3681636154651642, mae:0.38619449734687805

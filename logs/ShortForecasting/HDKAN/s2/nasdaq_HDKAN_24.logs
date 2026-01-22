@@ -1,0 +1,96 @@
+Args in experiment:
+Namespace(random_seed=2025, enable_visual=False, save_model=False, percent=100, patch_len=36, degree1=7, degree2=5, is_training=1, model_id='nasdaq_36_24', model='HDKAN', data='custom', root_path='D:\\work\\datasets\\all_datasets\\short-term', data_path='nasdaq.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=36, label_len=0, pred_len=24, use_revin=1, enc_in=12, dec_in=7, c_out=7, d_model=128, dropout=0.0, alpha=0.35, embed='timeF', num_workers=0, itr=1, train_epochs=20, batch_size=16, patience=5, learning_rate=2.5e-05, des='test', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : nasdaq_36_24_HDKAN_custom_ftM_bz16_sl36_pl24_lr2.5e-05_dm128_d17_d25_patl36_dr0.0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 2680
+val 370
+test 759
+	iters: 100, epoch: 1 | loss: 0.4217325
+	speed: 0.0265s/iter; left time: 85.7805s
+Epoch: 1 cost time: 3.1580147743225098
+Epoch: 1, Steps: 167 | Train Loss: 0.4261268 Vali Loss: 0.4515215 Test Loss: 0.1932794
+Validation loss decreased (inf --> 0.451521).  Saving model ...
+Updating learning rate to 2.5e-05
+	iters: 100, epoch: 2 | loss: 0.4795735
+	speed: 0.0349s/iter; left time: 107.4329s
+Epoch: 2 cost time: 2.9506943225860596
+Epoch: 2, Steps: 167 | Train Loss: 0.4015037 Vali Loss: 0.3631693 Test Loss: 0.1307380
+Validation loss decreased (0.451521 --> 0.363169).  Saving model ...
+Updating learning rate to 2.5e-05
+	iters: 100, epoch: 3 | loss: 0.4041185
+	speed: 0.0345s/iter; left time: 100.3664s
+Epoch: 3 cost time: 2.9681928157806396
+Epoch: 3, Steps: 167 | Train Loss: 0.3661709 Vali Loss: 0.3473625 Test Loss: 0.1184325
+Validation loss decreased (0.363169 --> 0.347362).  Saving model ...
+Updating learning rate to 2.5e-05
+	iters: 100, epoch: 4 | loss: 0.3657395
+	speed: 0.0242s/iter; left time: 66.3480s
+Epoch: 4 cost time: 1.5325322151184082
+Epoch: 4, Steps: 167 | Train Loss: 0.3575764 Vali Loss: 0.3366092 Test Loss: 0.1143812
+Validation loss decreased (0.347362 --> 0.336609).  Saving model ...
+Updating learning rate to 2e-05
+	iters: 100, epoch: 5 | loss: 0.3246620
+	speed: 0.0184s/iter; left time: 47.3819s
+Epoch: 5 cost time: 1.646507740020752
+Epoch: 5, Steps: 167 | Train Loss: 0.3533798 Vali Loss: 0.3366236 Test Loss: 0.1148526
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 1.6000000000000003e-05
+	iters: 100, epoch: 6 | loss: 0.3013068
+	speed: 0.0188s/iter; left time: 45.1445s
+Epoch: 6 cost time: 1.4926085472106934
+Epoch: 6, Steps: 167 | Train Loss: 0.3510286 Vali Loss: 0.3360163 Test Loss: 0.1145846
+Validation loss decreased (0.336609 --> 0.336016).  Saving model ...
+Updating learning rate to 1.2800000000000003e-05
+	iters: 100, epoch: 7 | loss: 0.3826038
+	speed: 0.0131s/iter; left time: 29.3896s
+Epoch: 7 cost time: 1.0704290866851807
+Epoch: 7, Steps: 167 | Train Loss: 0.3506272 Vali Loss: 0.3320259 Test Loss: 0.1138602
+Validation loss decreased (0.336016 --> 0.332026).  Saving model ...
+Updating learning rate to 1.0240000000000002e-05
+	iters: 100, epoch: 8 | loss: 0.3954729
+	speed: 0.0182s/iter; left time: 37.6580s
+Epoch: 8 cost time: 2.4573376178741455
+Epoch: 8, Steps: 167 | Train Loss: 0.3494857 Vali Loss: 0.3313907 Test Loss: 0.1137875
+Validation loss decreased (0.332026 --> 0.331391).  Saving model ...
+Updating learning rate to 8.192000000000002e-06
+	iters: 100, epoch: 9 | loss: 0.3074333
+	speed: 0.0351s/iter; left time: 66.8245s
+Epoch: 9 cost time: 2.978611469268799
+Epoch: 9, Steps: 167 | Train Loss: 0.3481540 Vali Loss: 0.3296226 Test Loss: 0.1135711
+Validation loss decreased (0.331391 --> 0.329623).  Saving model ...
+Updating learning rate to 6.553600000000003e-06
+	iters: 100, epoch: 10 | loss: 0.3657719
+	speed: 0.0349s/iter; left time: 60.7409s
+Epoch: 10 cost time: 2.9626517295837402
+Epoch: 10, Steps: 167 | Train Loss: 0.3480359 Vali Loss: 0.3299720 Test Loss: 0.1139553
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 5.242880000000002e-06
+	iters: 100, epoch: 11 | loss: 0.3526008
+	speed: 0.0353s/iter; left time: 55.4057s
+Epoch: 11 cost time: 3.006054401397705
+Epoch: 11, Steps: 167 | Train Loss: 0.3474451 Vali Loss: 0.3302182 Test Loss: 0.1140521
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 4.1943040000000025e-06
+	iters: 100, epoch: 12 | loss: 0.3357109
+	speed: 0.0349s/iter; left time: 49.0477s
+Epoch: 12 cost time: 2.9437172412872314
+Epoch: 12, Steps: 167 | Train Loss: 0.3469765 Vali Loss: 0.3299131 Test Loss: 0.1141252
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 3.355443200000002e-06
+	iters: 100, epoch: 13 | loss: 0.3643828
+	speed: 0.0347s/iter; left time: 42.8741s
+Epoch: 13 cost time: 2.9945554733276367
+Epoch: 13, Steps: 167 | Train Loss: 0.3472674 Vali Loss: 0.3298167 Test Loss: 0.1142979
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 2.6843545600000017e-06
+	iters: 100, epoch: 14 | loss: 0.4602587
+	speed: 0.0350s/iter; left time: 37.4867s
+Epoch: 14 cost time: 2.9806289672851562
+Epoch: 14, Steps: 167 | Train Loss: 0.3468406 Vali Loss: 0.3296503 Test Loss: 0.1142628
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : nasdaq_36_24_HDKAN_custom_ftM_bz16_sl36_pl24_lr2.5e-05_dm128_d17_d25_patl36_dr0.0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 759
+test shape: (759, 24, 12) (759, 24, 12)
+test shape: (759, 24, 12) (759, 24, 12)
+mse:0.11357109248638153, mae:0.20874935388565063

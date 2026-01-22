@@ -1,0 +1,72 @@
+Args in experiment:
+Namespace(random_seed=2025, enable_visual=False, save_model=False, percent=100, patch_len=48, degree1=4, degree2=2, is_training=1, model_id='exchange_96_336', model='HDKAN', data='custom', root_path='D:\\work\\datasets\\all_datasets\\exchange_rate', data_path='exchange_rate.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=0, pred_len=336, use_revin=1, enc_in=8, dec_in=7, c_out=7, d_model=256, dropout=0.1, alpha=0.2, embed='timeF', num_workers=0, itr=1, train_epochs=10, batch_size=32, patience=3, learning_rate=5e-05, des='test', loss='mse', lradj='type1', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : exchange_96_336_HDKAN_custom_ftM_bz32_sl96_pl336_lr5e-05_dm256_d14_d22_patl48_dr0.1>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 4880
+val 425
+test 1182
+	iters: 100, epoch: 1 | loss: 0.9650705
+	speed: 0.0147s/iter; left time: 20.8390s
+Epoch: 1 cost time: 1.2159757614135742
+Epoch: 1, Steps: 152 | Train Loss: 0.9656466 Vali Loss: 1.0296427 Test Loss: 0.3826719
+Validation loss decreased (inf --> 1.029643).  Saving model ...
+Updating learning rate to 5e-05
+	iters: 100, epoch: 2 | loss: 0.9529064
+	speed: 0.0119s/iter; left time: 15.0963s
+Epoch: 2 cost time: 1.0315985679626465
+Epoch: 2, Steps: 152 | Train Loss: 0.9331066 Vali Loss: 0.9263300 Test Loss: 0.3289837
+Validation loss decreased (1.029643 --> 0.926330).  Saving model ...
+Updating learning rate to 2.5e-05
+	iters: 100, epoch: 3 | loss: 0.7812575
+	speed: 0.0118s/iter; left time: 13.1748s
+Epoch: 3 cost time: 1.040172815322876
+Epoch: 3, Steps: 152 | Train Loss: 0.8959670 Vali Loss: 0.9104656 Test Loss: 0.3265877
+Validation loss decreased (0.926330 --> 0.910466).  Saving model ...
+Updating learning rate to 1.25e-05
+	iters: 100, epoch: 4 | loss: 0.8839216
+	speed: 0.0119s/iter; left time: 11.5048s
+Epoch: 4 cost time: 1.0450177192687988
+Epoch: 4, Steps: 152 | Train Loss: 0.8923244 Vali Loss: 0.9100752 Test Loss: 0.3252437
+Validation loss decreased (0.910466 --> 0.910075).  Saving model ...
+Updating learning rate to 6.25e-06
+	iters: 100, epoch: 5 | loss: 0.7908444
+	speed: 0.0119s/iter; left time: 9.6919s
+Epoch: 5 cost time: 1.045790195465088
+Epoch: 5, Steps: 152 | Train Loss: 0.8911067 Vali Loss: 0.9090309 Test Loss: 0.3257345
+Validation loss decreased (0.910075 --> 0.909031).  Saving model ...
+Updating learning rate to 3.125e-06
+	iters: 100, epoch: 6 | loss: 0.9628165
+	speed: 0.0119s/iter; left time: 7.8514s
+Epoch: 6 cost time: 1.0427300930023193
+Epoch: 6, Steps: 152 | Train Loss: 0.8909580 Vali Loss: 0.9089358 Test Loss: 0.3259541
+Validation loss decreased (0.909031 --> 0.908936).  Saving model ...
+Updating learning rate to 1.5625e-06
+	iters: 100, epoch: 7 | loss: 0.9475561
+	speed: 0.0119s/iter; left time: 6.0565s
+Epoch: 7 cost time: 1.0445244312286377
+Epoch: 7, Steps: 152 | Train Loss: 0.8907596 Vali Loss: 0.9086599 Test Loss: 0.3260100
+Validation loss decreased (0.908936 --> 0.908660).  Saving model ...
+Updating learning rate to 7.8125e-07
+	iters: 100, epoch: 8 | loss: 0.8688221
+	speed: 0.0119s/iter; left time: 4.2454s
+Epoch: 8 cost time: 1.042680263519287
+Epoch: 8, Steps: 152 | Train Loss: 0.8899308 Vali Loss: 0.9084760 Test Loss: 0.3260360
+Validation loss decreased (0.908660 --> 0.908476).  Saving model ...
+Updating learning rate to 3.90625e-07
+	iters: 100, epoch: 9 | loss: 0.8774811
+	speed: 0.0118s/iter; left time: 2.4130s
+Epoch: 9 cost time: 1.0270700454711914
+Epoch: 9, Steps: 152 | Train Loss: 0.8903900 Vali Loss: 0.9079951 Test Loss: 0.3260550
+Validation loss decreased (0.908476 --> 0.907995).  Saving model ...
+Updating learning rate to 1.953125e-07
+	iters: 100, epoch: 10 | loss: 0.7674955
+	speed: 0.0118s/iter; left time: 0.6252s
+Epoch: 10 cost time: 1.0324630737304688
+Epoch: 10, Steps: 152 | Train Loss: 0.8901238 Vali Loss: 0.9058262 Test Loss: 0.3260556
+Validation loss decreased (0.907995 --> 0.905826).  Saving model ...
+Updating learning rate to 9.765625e-08
+>>>>>>>testing : exchange_96_336_HDKAN_custom_ftM_bz32_sl96_pl336_lr5e-05_dm256_d14_d22_patl48_dr0.1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 1182
+test shape: (1182, 336, 8) (1182, 336, 8)
+test shape: (1182, 336, 8) (1182, 336, 8)
+mse:0.326055645942688, mae:0.41329720616340637

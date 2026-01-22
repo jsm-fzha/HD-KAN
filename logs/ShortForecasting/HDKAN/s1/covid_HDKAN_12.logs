@@ -1,0 +1,36 @@
+Args in experiment:
+Namespace(random_seed=2025, enable_visual=False, save_model=False, percent=100, patch_len=12, degree1=7, degree2=3, is_training=1, model_id='covid_12_12', model='HDKAN', data='custom', root_path='D:\\work\\datasets\\all_datasets\\short-term', data_path='covid.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=12, label_len=0, pred_len=12, use_revin=1, enc_in=55, dec_in=7, c_out=7, d_model=512, dropout=0.0, alpha=0.0, embed='timeF', num_workers=0, itr=1, train_epochs=20, batch_size=4, patience=5, learning_rate=0.001, des='test', loss='mse', lradj='type1', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : covid_12_12_HDKAN_custom_ftM_bz4_sl12_pl12_lr0.001_dm512_d17_d23_patl12_dr0.0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 211
+val 23
+test 56
+Epoch: 1 cost time: 0.5037093162536621
+Epoch: 1, Steps: 52 | Train Loss: 0.3974818 Vali Loss: 0.2776338 Test Loss: 2.9982519
+Validation loss decreased (inf --> 0.277634).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2 cost time: 0.3393692970275879
+Epoch: 2, Steps: 52 | Train Loss: 0.3931575 Vali Loss: 0.2894328 Test Loss: 2.8099403
+EarlyStopping counter: 1 out of 5
+Updating learning rate to 0.0005
+Epoch: 3 cost time: 0.3348827362060547
+Epoch: 3, Steps: 52 | Train Loss: 0.3507228 Vali Loss: 0.2966730 Test Loss: 2.8618531
+EarlyStopping counter: 2 out of 5
+Updating learning rate to 0.00025
+Epoch: 4 cost time: 0.3344547748565674
+Epoch: 4, Steps: 52 | Train Loss: 0.3043085 Vali Loss: 0.2905959 Test Loss: 3.0337346
+EarlyStopping counter: 3 out of 5
+Updating learning rate to 0.000125
+Epoch: 5 cost time: 0.3318929672241211
+Epoch: 5, Steps: 52 | Train Loss: 0.2843052 Vali Loss: 0.2886597 Test Loss: 2.9063888
+EarlyStopping counter: 4 out of 5
+Updating learning rate to 6.25e-05
+Epoch: 6 cost time: 0.32790637016296387
+Epoch: 6, Steps: 52 | Train Loss: 0.2753860 Vali Loss: 0.2935749 Test Loss: 3.0825458
+EarlyStopping counter: 5 out of 5
+Early stopping
+>>>>>>>testing : covid_12_12_HDKAN_custom_ftM_bz4_sl12_pl12_lr0.001_dm512_d17_d23_patl12_dr0.0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 56
+test shape: (56, 12, 55) (56, 12, 55)
+test shape: (56, 12, 55) (56, 12, 55)
+mse:2.9982519149780273, mae:0.9916768074035645
