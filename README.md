@@ -41,12 +41,14 @@ The detailed training logs:
    
    For Linux:
     ```bash
-    sh scripts/LongForecasting/AdaCycle.sh
-    sh scripts/ShortForecasting/AdaCycle.sh
+    sh scripts/LongForecasting/HDKAN.sh
+    sh scripts/ShortForecasting/HDKAN_s1.sh
+    sh scripts/ShortForecasting/HDKAN_s2.sh
     ```
     For Windows:
     ```
-    scripts/LongForecasting/AdaCycle.bat
-    scripts/ShortForecasting/AdaCycle.bat
+    scripts/LongForecasting/HDKAN.bat
+    scripts/ShortForecasting/HDKAN_s1.bat
+    scripts/ShortForecasting/HDKAN_s2.bat
     ```
 
