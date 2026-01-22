@@ -1,0 +1,60 @@
+Args in experiment:
+Namespace(random_seed=2025, enable_visual=False, save_model=False, percent=100, patch_len=12, degree1=7, degree2=2, is_training=1, model_id='ETTh1_96_192', model='HDKAN', data='ETTh1', root_path='D:\\work\\datasets\\all_datasets\\ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=0, pred_len=192, use_revin=1, enc_in=7, dec_in=7, c_out=7, d_model=256, dropout=0.2, alpha=0.35, embed='timeF', num_workers=0, itr=1, train_epochs=10, batch_size=64, patience=3, learning_rate=0.0008, des='test', loss='mse', lradj='type1', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_96_192_HDKAN_ETTh1_ftM_bz64_sl96_pl192_lr0.0008_dm256_d17_d22_patl12_dr0.2>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2689
+test 2689
+	iters: 100, epoch: 1 | loss: 2.0653169
+	speed: 0.0146s/iter; left time: 17.5442s
+Epoch: 1 cost time: 1.060472011566162
+Epoch: 1, Steps: 130 | Train Loss: 2.1511222 Vali Loss: 2.7581621 Test Loss: 0.6141287
+Validation loss decreased (inf --> 2.758162).  Saving model ...
+Updating learning rate to 0.0008
+	iters: 100, epoch: 2 | loss: 1.9343914
+	speed: 0.0115s/iter; left time: 12.3207s
+Epoch: 2 cost time: 0.8849642276763916
+Epoch: 2, Steps: 130 | Train Loss: 1.9779869 Vali Loss: 2.5047767 Test Loss: 0.4302435
+Validation loss decreased (2.758162 --> 2.504777).  Saving model ...
+Updating learning rate to 0.0004
+	iters: 100, epoch: 3 | loss: 1.9638069
+	speed: 0.0116s/iter; left time: 10.9007s
+Epoch: 3 cost time: 0.9084606170654297
+Epoch: 3, Steps: 130 | Train Loss: 1.9192359 Vali Loss: 2.4880701 Test Loss: 0.4228766
+Validation loss decreased (2.504777 --> 2.488070).  Saving model ...
+Updating learning rate to 0.0002
+	iters: 100, epoch: 4 | loss: 1.9399921
+	speed: 0.0117s/iter; left time: 9.4715s
+Epoch: 4 cost time: 0.9066123962402344
+Epoch: 4, Steps: 130 | Train Loss: 1.9038136 Vali Loss: 2.4868638 Test Loss: 0.4178101
+Validation loss decreased (2.488070 --> 2.486864).  Saving model ...
+Updating learning rate to 0.0001
+	iters: 100, epoch: 5 | loss: 1.8711771
+	speed: 0.0116s/iter; left time: 7.9088s
+Epoch: 5 cost time: 0.9093537330627441
+Epoch: 5, Steps: 130 | Train Loss: 1.8943673 Vali Loss: 2.4864718 Test Loss: 0.4170738
+Validation loss decreased (2.486864 --> 2.486472).  Saving model ...
+Updating learning rate to 5e-05
+	iters: 100, epoch: 6 | loss: 1.8496579
+	speed: 0.0117s/iter; left time: 6.4533s
+Epoch: 6 cost time: 0.9238240718841553
+Epoch: 6, Steps: 130 | Train Loss: 1.8890325 Vali Loss: 2.4885351 Test Loss: 0.4163077
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2.5e-05
+	iters: 100, epoch: 7 | loss: 1.8095839
+	speed: 0.0118s/iter; left time: 4.9543s
+Epoch: 7 cost time: 0.913212776184082
+Epoch: 7, Steps: 130 | Train Loss: 1.8860538 Vali Loss: 2.4885963 Test Loss: 0.4165478
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1.25e-05
+	iters: 100, epoch: 8 | loss: 1.8805758
+	speed: 0.0117s/iter; left time: 3.3937s
+Epoch: 8 cost time: 0.9130153656005859
+Epoch: 8, Steps: 130 | Train Loss: 1.8846009 Vali Loss: 2.4887734 Test Loss: 0.4164548
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_96_192_HDKAN_ETTh1_ftM_bz64_sl96_pl192_lr0.0008_dm256_d17_d22_patl12_dr0.2<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+test shape: (2689, 192, 7) (2689, 192, 7)
+test shape: (2689, 192, 7) (2689, 192, 7)
+mse:0.4170738458633423, mae:0.4180282950401306

@@ -1,0 +1,60 @@
+Args in experiment:
+Namespace(random_seed=2025, enable_visual=False, save_model=False, percent=100, patch_len=48, degree1=4, degree2=2, is_training=1, model_id='exchange_96_720', model='HDKAN', data='custom', root_path='D:\\work\\datasets\\all_datasets\\exchange_rate', data_path='exchange_rate.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=0, pred_len=720, use_revin=1, enc_in=8, dec_in=7, c_out=7, d_model=256, dropout=0.1, alpha=0.2, embed='timeF', num_workers=0, itr=1, train_epochs=10, batch_size=32, patience=3, learning_rate=5e-05, des='test', loss='mse', lradj='type1', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', inverse=False)
+Use GPU: cuda:0
+>>>>>>>start training : exchange_96_720_HDKAN_custom_ftM_bz32_sl96_pl720_lr5e-05_dm256_d14_d22_patl48_dr0.1>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 4496
+val 41
+test 798
+	iters: 100, epoch: 1 | loss: 1.3047104
+	speed: 0.0148s/iter; left time: 19.2371s
+Epoch: 1 cost time: 1.1683168411254883
+Epoch: 1, Steps: 140 | Train Loss: 1.4516640 Vali Loss: 1.7574792 Test Loss: 0.9309856
+Validation loss decreased (inf --> 1.757479).  Saving model ...
+Updating learning rate to 5e-05
+	iters: 100, epoch: 2 | loss: 1.4545848
+	speed: 0.0109s/iter; left time: 12.6580s
+Epoch: 2 cost time: 0.9803416728973389
+Epoch: 2, Steps: 140 | Train Loss: 1.4401920 Vali Loss: 1.7771089 Test Loss: 0.8845962
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2.5e-05
+	iters: 100, epoch: 3 | loss: 1.4221482
+	speed: 0.0107s/iter; left time: 10.9637s
+Epoch: 3 cost time: 0.9883451461791992
+Epoch: 3, Steps: 140 | Train Loss: 1.4041874 Vali Loss: 1.7310766 Test Loss: 0.8480228
+Validation loss decreased (1.757479 --> 1.731077).  Saving model ...
+Updating learning rate to 1.25e-05
+	iters: 100, epoch: 4 | loss: 1.4108770
+	speed: 0.0109s/iter; left time: 9.5738s
+Epoch: 4 cost time: 0.9932563304901123
+Epoch: 4, Steps: 140 | Train Loss: 1.3961489 Vali Loss: 1.6924506 Test Loss: 0.8553311
+Validation loss decreased (1.731077 --> 1.692451).  Saving model ...
+Updating learning rate to 6.25e-06
+	iters: 100, epoch: 5 | loss: 1.4316313
+	speed: 0.0108s/iter; left time: 8.0305s
+Epoch: 5 cost time: 0.9854505062103271
+Epoch: 5, Steps: 140 | Train Loss: 1.3931216 Vali Loss: 1.6546183 Test Loss: 0.8544828
+Validation loss decreased (1.692451 --> 1.654618).  Saving model ...
+Updating learning rate to 3.125e-06
+	iters: 100, epoch: 6 | loss: 1.3715863
+	speed: 0.0109s/iter; left time: 6.5466s
+Epoch: 6 cost time: 0.9885787963867188
+Epoch: 6, Steps: 140 | Train Loss: 1.3915011 Vali Loss: 1.6846693 Test Loss: 0.8541335
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.5625e-06
+	iters: 100, epoch: 7 | loss: 1.3672569
+	speed: 0.0108s/iter; left time: 4.9964s
+Epoch: 7 cost time: 0.9930524826049805
+Epoch: 7, Steps: 140 | Train Loss: 1.3915512 Vali Loss: 1.6589572 Test Loss: 0.8541417
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 7.8125e-07
+	iters: 100, epoch: 8 | loss: 1.5021733
+	speed: 0.0109s/iter; left time: 3.4873s
+Epoch: 8 cost time: 0.9952042102813721
+Epoch: 8, Steps: 140 | Train Loss: 1.3908792 Vali Loss: 1.6829717 Test Loss: 0.8541299
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : exchange_96_720_HDKAN_custom_ftM_bz32_sl96_pl720_lr5e-05_dm256_d14_d22_patl48_dr0.1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 798
+test shape: (798, 720, 8) (798, 720, 8)
+test shape: (798, 720, 8) (798, 720, 8)
+mse:0.8544827699661255, mae:0.6980949640274048
