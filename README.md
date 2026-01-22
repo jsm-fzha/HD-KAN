@@ -3,7 +3,8 @@
 
 ## Updates
 The detailed training logs:
-- Long-term forecasting: [logs/LongForecasting/HDKAN](logs/LongForecasting/HDKAN)
+- Long-term forecasting:
+- [logs/LongForecasting/HDKAN](logs/LongForecasting/HDKAN)
 - Short-term forecasting:
 - [logs/ShortForecasting/HDKAN/s1](logs/ShortForecasting/HDKAN/s1)
 - [logs/ShortForecasting/HDKAN/s2](logs/ShortForecasting/HDKAN/s2)
