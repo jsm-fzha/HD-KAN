@@ -3,8 +3,10 @@
 
 ## Updates
 The detailed training logs:
-- Long-term forecasting: [logs/LongForecasting/AdaCycle](logs/LongForecasting/HDKAN)
-- Short-term forecasting: [logs/ShortForecasting/AdaCycle](logs/ShortForecasting/HDKAN/s1)
+- Long-term forecasting: [logs/LongForecasting/HDKAN](logs/LongForecasting/HDKAN)
+- Short-term forecasting:
+  [logs/ShortForecasting/HDKAN/s1](logs/ShortForecasting/HDKAN/s1)
+  [logs/ShortForecasting/HDKAN/s2](logs/ShortForecasting/HDKAN/s2)
 
 ## Usage
 1. Install the dependencies
